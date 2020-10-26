@@ -1,0 +1,17 @@
+{
+  "name": "@unicef-polymer/etools-types",
+  "version": "0.0.1",
+  "description": "Etools types",
+  "main": "index.d.ts",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/unicef-polymer/etools-types.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/unicef-polymer/etools-types/issues"
+  },
+  "homepage": "https://github.com/unicef-polymer/etools-types#readme"
+}
