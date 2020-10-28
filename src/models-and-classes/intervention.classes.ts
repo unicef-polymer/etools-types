@@ -8,6 +8,7 @@ import {ReviewAttachment} from '../attachments.types';
 import {Permission} from '../global.types';
 import {LocationObject} from '../locations.types';
 import {Section} from '../static-data.types';
+import {MinimalUser} from '../user.types';
 
 export interface ResultLinkLowerResult {
   // ll_result
@@ -219,6 +220,7 @@ export class Intervention {
   status = '';
   start = '';
   end = '';
+  budget_owner?: MinimalUser;
   submitted_to_prc = false;
   submission_date_prc?: string;
   review_date_prc?: string;
@@ -226,8 +228,8 @@ export class Intervention {
   submission_date?: string;
   signed_by_unicef_date?: string;
   signed_by_partner_date?: string;
-  unicef_signatory?: string;
-  unicef_focal_points: [] = [];
+  unicef_signatory?: MinimalUser;
+  unicef_focal_points: MinimalUser[] = [];
   partner?: string;
   partner_focal_points: [] = [];
   partner_vendor = '';
