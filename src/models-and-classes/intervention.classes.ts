@@ -6,6 +6,8 @@ import {
 } from '../intervention.types';
 import {ReviewAttachment} from '../attachments.types';
 import {Permission} from '../global.types';
+import {LocationObject} from '../locations.types';
+import {Section} from '../static-data.types';
 
 export interface ResultLinkLowerResult {
   // ll_result
@@ -276,3 +278,12 @@ export type RiskData = {
   risk_type: string;
   mitigation_measures: string;
 }
+
+export type IndicatorDialogData = {
+  indicator: Indicator | null;
+  sectionOptions: Section[];
+  locationOptions: LocationObject[];
+  llResultId: string;
+  prpServerOn: boolean;
+  readonly: boolean | undefined;
+};

@@ -1,15 +1,28 @@
 {
   "name": "@unicef-polymer/etools-types",
-  "version": "0.0.1",
   "description": "Etools types",
-  "main": "index.d.ts",
-  "scripts": {},
+  "version": "0.0.6",
+  "contributors": [
+    "eTools Team"
+  ],
+  "license": "BSD-3-Clause",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/unicef-polymer/etools-types.git"
   },
-  "author": "",
-  "license": "ISC",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc --skipLibCheck",
+    "prepare": "rm -rf ./dist && npm run build"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^3.8.3"
+  },
   "bugs": {
     "url": "https://github.com/unicef-polymer/etools-types/issues"
   },

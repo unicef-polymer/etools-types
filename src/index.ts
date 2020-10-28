@@ -7,3 +7,5 @@ export * from './endpoints.types';
 export * from './user.types';
 export * from './dialog.types';
 export * from './partner.types';
+export * from './models-and-classes/intervention.classes';
+export * from './models-and-classes/agreement.classes';

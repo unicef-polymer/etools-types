@@ -1,5 +1,6 @@
 export type EtoolsUser = {
   countries_available: AvailableUserCountry[],
+  country: UserCountry;
   supervisor: boolean | null;
   groups: UserGroup[];
   supervisees: any[];
