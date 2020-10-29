@@ -25,3 +25,25 @@ export interface Permission<T> {
   edit: T;
   required: T;
 }
+
+export interface EtoolsTab {
+  tab: string;
+  tabLabel: string;
+  hidden?: boolean;
+  showTabCounter?: boolean;
+  counter?: number;
+}
+
+export interface UserPermissions {
+  ICT: boolean;
+  PME: boolean;
+  editAgreementDetails: boolean;
+  editInterventionDetails: boolean;
+  editPartnerDetails: boolean;
+  loggedInDefault: boolean;
+  partnershipManager: boolean;
+  userInfoMenu: boolean;
+  viewAgreementDetails: boolean;
+  viewInterventionDetails: boolean;
+  viewPartnerDetails: boolean;
+}

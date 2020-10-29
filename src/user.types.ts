@@ -53,6 +53,15 @@ export type UserCountry = {
   local_currency: string;
 }
 
+export type Country = {
+  country_short_code: string;
+  initial_zoom: number;
+  latitude: string;
+  local_currency: string;
+  local_currency_code: string;
+  local_currency_id: number;
+  longitude: string;
+} & AvailableUserCountry;
 
 export interface MinimalUser {
   id: number;

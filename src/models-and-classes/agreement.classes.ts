@@ -14,6 +14,7 @@ export class MinimalAgreement {
   partner_name = '';
   signed_by_partner_date = '';
   signed_by_unicef_date = '';
+  signed_by?: string | null = null;
   special_conditions_pca = false;
   status = '';
 }

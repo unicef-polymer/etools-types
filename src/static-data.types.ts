@@ -1,6 +1,6 @@
-export interface LabelAndValue {
+export interface LabelAndValue<T = string> {
   label: string;
-  value: string;
+  value: T;
 }
 
 export interface IdAndName<T = string> {

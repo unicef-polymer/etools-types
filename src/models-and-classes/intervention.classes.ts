@@ -289,3 +289,29 @@ export type IndicatorDialogData = {
   prpServerOn: boolean;
   readonly: boolean | undefined;
 };
+
+export class ListItemIntervention {
+  start = '';
+  end = '';
+  frs_earliest_start_date: string | null = '';
+  frs_latest_end_date: string | null = '';
+  partner_name?: string = '';
+  cp_outputs: number[] = [];
+  unicef_budget = 0;
+  cso_contribution = 0;
+  country_programme?: number;
+  title?: string = '';
+  status = '';
+  number?: string = '';
+  offices: [] = [];
+  sections: number[] = [];
+  section_names: string[] | null = null;
+  document_type?: string = '';
+  unicef_focal_points: MinimalUser[] = [];
+  [key: string]: any;
+  partner_accepted?: boolean;
+  unicef_accepted?: boolean;
+  unicef_court?: boolean;
+  date_sent_to_partner?: string;
+  date_draft_by_partner?: string;
+}
