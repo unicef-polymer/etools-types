@@ -39,7 +39,6 @@ export type InterventionListData = {
   unicef_accepted: boolean;
   unicef_court: boolean;
   date_sent_to_partner: string;
-  date_draft_by_partner: string;
 };
 
 export type InterventionAmendment = {
