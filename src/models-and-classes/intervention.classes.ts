@@ -135,6 +135,7 @@ export class InterventionSupplyItem {
   result = '';
   total_price: number | undefined = undefined;
   other_mentions = '';
+  unicef_product_number = '';
   intervention = '';
 }
 
