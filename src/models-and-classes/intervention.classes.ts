@@ -135,6 +135,7 @@ export class InterventionSupplyItem {
   result = '';
   total_price: number | undefined = undefined;
   other_mentions = '';
+  unicef_product_number = '';
   intervention = '';
 }
 
@@ -231,9 +232,9 @@ export class Intervention {
   unicef_signatory?: MinimalUser;
   unicef_focal_points: MinimalUser[] = [];
   partner?: string;
-  partner_focal_points: [] = [];
+  partner_focal_points: MinimalUser[] = [];
   partner_vendor = '';
-  partner_authorized_officer_signatory?: string;
+  partner_authorized_officer_signatory?: MinimalUser;
   offices: [] = [];
   sections: [] = [];
   frs: number[] = [];
@@ -270,7 +271,6 @@ export class Intervention {
   unicef_court = true;
   unicef_accepted = false;
   partner_accepted = false;
-  date_draft_by_partner = '';
   date_sent_to_partner = '';
   cancel_justification = '';
 }
@@ -313,5 +313,4 @@ export class ListItemIntervention {
   unicef_accepted?: boolean;
   unicef_court?: boolean;
   date_sent_to_partner?: string;
-  date_draft_by_partner?: string;
 }
