@@ -273,6 +273,7 @@ export class Intervention {
   partner_accepted = false;
   date_sent_to_partner = '';
   cancel_justification = '';
+  date_partnership_review_performed?: string;
 }
 
 export type RiskData = {
