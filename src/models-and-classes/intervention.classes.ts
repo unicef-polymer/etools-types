@@ -274,6 +274,7 @@ export class Intervention {
   date_sent_to_partner = '';
   cancel_justification = '';
   date_partnership_review_performed?: string;
+  reviews: InterventionReview[] = [];
 }
 
 export type RiskData = {
@@ -315,3 +316,13 @@ export class ListItemIntervention {
   unicef_court?: boolean;
   date_sent_to_partner?: string;
 }
+
+export type InterventionReview = {
+  amendment: number;
+  created: string;
+  id: number;
+  intervention: number;
+  modified: string;
+  overall_approval: boolean
+  review_type: string;
+};
