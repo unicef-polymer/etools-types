@@ -205,6 +205,9 @@ export class InterventionPermissionsFields {
 
   // Supply Agreement
   supply_items = false;
+
+  // Review
+  reviews = false;
 }
 
 
