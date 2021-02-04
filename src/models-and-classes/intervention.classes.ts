@@ -326,3 +326,10 @@ export type InterventionReview = {
   overall_approval: boolean
   review_type: string;
 };
+
+export declare class PartnerReportingRequirements {
+    qpr: any;
+    hr: any;
+    sr: any;
+    special: any;
+};
