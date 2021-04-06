@@ -75,6 +75,8 @@ export class PlannedBudget {
   total_local?: number;
   total_unicef_contribution_local?: number;
   total_cash_local?: number;
+  total_hq_cash_local?: number;
+  total_unicef_cash_local_wo_hq?: number;
 }
 
 export class InterventionAttachment {
