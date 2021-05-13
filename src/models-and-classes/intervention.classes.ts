@@ -323,11 +323,42 @@ export class ListItemIntervention {
 }
 
 export type InterventionReview = {
+  actions_list: string;
   amendment: number;
-  created: string;
+  budget_is_aligned: string;
+  ges_considered: string;
   id: number;
-  intervention: number;
-  modified: string;
-  overall_approval: boolean
+  meeting_date: string | null;
+  overall_approval: boolean | null;
+  overall_approver: MinimalUser | null;
+  overall_comment: string;
+  partner_comparative_advantage: string;
+  pd_is_guided: string;
+  pd_is_relevant: string;
+  prc_officers: number[]
+  relationship_is_represented: string;
+  relationships_are_positive: string;
   review_type: string;
+  started_by: MinimalUser | null;
+  started_date: string | null;
+  submitted_by: MinimalUser | null;
+  submitted_date: string | null;
+  supply_issues_considered: string;
+};
+
+export type PrcOfficerReview = {
+  budget_is_aligned: string;
+  ges_considered: string;
+  id: number;
+  overall_approval: boolean | null;
+  overall_comment: string;
+  partner_comparative_advantage: string;
+  pd_is_guided: string;
+  pd_is_relevant: string;
+  relationship_is_represented: string;
+  relationships_are_positive: string;
+  started_date: string | null;
+  submitted_date: string | null;
+  supply_issues_considered: string;
+  user: MinimalUser;
 };
