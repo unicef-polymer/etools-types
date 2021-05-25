@@ -86,6 +86,9 @@ export type InterventionActivityItem = {
   other_details: string;
   unicef_cash: string;
   cso_cash: string;
+  unit: string;
+  no_units: number;
+  unit_price: string;
 };
 
 export type InterventionActivityTimeframe = InterventionQuarter & {
