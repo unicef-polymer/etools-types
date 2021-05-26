@@ -20,4 +20,5 @@ export interface RouteDetails {
   path: string;
   queryParams: RouteQueryParam | null;
   params: RouteParams | null;
+  subSubRouteName?: string;
 }

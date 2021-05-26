@@ -344,6 +344,7 @@ export type InterventionReview = {
   submitted_by: MinimalUser | null;
   submitted_date: string | null;
   supply_issues_considered: string;
+  created: string | null;
 };
 
 export type PrcOfficerReview = {
