@@ -1,7 +1,7 @@
 {
   "name": "@unicef-polymer/etools-types",
   "description": "Etools types",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "contributors": [
     "eTools Team"
   ],
@@ -19,7 +19,6 @@
     "build": "tsc --skipLibCheck",
     "prepare": "rm -rf ./dist && npm run build"
   },
-  "dependencies": {},
   "devDependencies": {
     "typescript": "^3.8.3"
   },

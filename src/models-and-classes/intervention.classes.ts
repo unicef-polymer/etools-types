@@ -326,6 +326,7 @@ export type InterventionReview = {
   actions_list: string;
   amendment: number;
   budget_is_aligned: string;
+  created_date: string;
   ges_considered: string;
   id: number;
   meeting_date: string | null;
@@ -338,13 +339,10 @@ export type InterventionReview = {
   prc_officers: number[]
   relationship_is_represented: string;
   relationships_are_positive: string;
+  review_date: string | null;
   review_type: string;
-  started_by: MinimalUser | null;
-  started_date: string | null;
   submitted_by: MinimalUser | null;
-  submitted_date: string | null;
   supply_issues_considered: string;
-  created: string;
 };
 
 export type PrcOfficerReview = {
@@ -358,8 +356,7 @@ export type PrcOfficerReview = {
   pd_is_relevant: string;
   relationship_is_represented: string;
   relationships_are_positive: string;
-  started_date: string | null;
-  submitted_date: string | null;
+  review_date: string | null;
   supply_issues_considered: string;
   user: MinimalUser;
 };
