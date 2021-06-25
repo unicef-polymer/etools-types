@@ -51,6 +51,7 @@ export type InterventionAmendment = {
   signed_date: string | null;
   signed_amendment_attachment: number | string | null;
   internal_prc_review: number | string | null;
+  amended_intervention: string | null;
 };
 
 export type InterventionComment = {

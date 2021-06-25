@@ -24,6 +24,7 @@ export interface EnvFlags {
 export interface Permission<T> {
   edit: T;
   required: T;
+  view?: T;
 }
 
 export interface EtoolsTab {

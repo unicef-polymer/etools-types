@@ -210,6 +210,7 @@ export class InterventionPermissionsFields {
 
   // Review Tab
   reviews = false;
+  prc_reviews = false;
 }
 
 
@@ -280,6 +281,7 @@ export class Intervention {
   cancel_justification = '';
   date_partnership_review_performed?: string;
   reviews: InterventionReview[] = [];
+  original_intervention = '';
 }
 
 export type RiskData = {
