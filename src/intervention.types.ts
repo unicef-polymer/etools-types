@@ -125,4 +125,15 @@ export type ManagementBudget = {
   act3_total: number;
   act3_unicef: string;
   total: number;
+  items: ManagementBudgetItem[];
+};
+
+export type ManagementBudgetItem = {
+  name: string;
+  kind: string;
+  unicef_cash: string;
+  cso_cash: string;
+  unit: string;
+  no_units: number;
+  unit_price: string;
 };
