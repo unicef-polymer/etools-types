@@ -1,5 +1,6 @@
 export * from './global.types';
 export * from './locations.types';
+export * from './sites.types';
 export * from './static-data.types';
 export * from './intervention.types';
 export * from './router.types';
