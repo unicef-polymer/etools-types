@@ -15,7 +15,8 @@ jobs:
       - checkout
       - restore_cache:
           key: cache-{{ checksum "package.json" }}
-      - update_npm:
+      - run:
+          name: update_npm
           command: npm install -g npm@7.6.3
       - run:
           name: Install node modules
