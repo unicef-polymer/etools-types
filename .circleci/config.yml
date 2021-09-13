@@ -30,7 +30,7 @@ jobs:
       - checkout
       - run:
           name: Publish package
-          command: echo "testing for now: npm publish"
+          command: echo "testing for now npm publish"
 
 workflows:
   version: 2
