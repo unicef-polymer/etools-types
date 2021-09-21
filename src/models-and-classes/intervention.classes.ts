@@ -282,6 +282,7 @@ export class Intervention {
   date_partnership_review_performed?: string;
   reviews: InterventionReview[] = [];
   original_intervention = '';
+  activation_protocol = '';
 }
 
 export type RiskData = {
