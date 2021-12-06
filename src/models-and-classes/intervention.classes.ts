@@ -4,11 +4,11 @@ import {
   InterventionQuarter,
   ManagementBudget,
 } from '../intervention.types';
-import {ReviewAttachment} from '../attachments.types';
-import {Permission} from '../global.types';
-import {LocationObject} from '../locations.types';
-import {Section} from '../static-data.types';
-import {MinimalUser} from '../user.types';
+import { ReviewAttachment } from '../attachments.types';
+import { Permission } from '../global.types';
+import { LocationObject } from '../locations.types';
+import { Section } from '../static-data.types';
+import { MinimalUser } from '../user.types';
 
 export interface ResultLinkLowerResult {
   // ll_result
@@ -49,8 +49,8 @@ export class Indicator {
   is_high_frequency = false;
   indicator: IndicatorIndicator | null = new IndicatorIndicator();
   section: string | null = null;
-  baseline: {v?: string | number | null; d?: string | number} = {};
-  target: {v?: string | number | null; d: string | number} = {d: '1'};
+  baseline: { v?: string | number | null; d?: string | number } = {};
+  target: { v?: string | number | null; d: string | number } = { d: '1' };
   means_of_verification: string | null = null;
   locations: string[] = [];
   disaggregation: string[] = [];
@@ -211,8 +211,9 @@ export class InterventionPermissionsFields {
   // Review Tab
   reviews = false;
   prc_reviews = false;
-}
 
+  document_currency = false;
+}
 
 export class Intervention {
   id: number | null = null;
@@ -289,7 +290,7 @@ export type RiskData = {
   id: number;
   risk_type: string;
   mitigation_measures: string;
-}
+};
 
 export type IndicatorDialogData = {
   indicator: Indicator | null;
@@ -339,7 +340,7 @@ export type InterventionReview = {
   partner_comparative_advantage: string;
   pd_is_guided: string;
   pd_is_relevant: string;
-  prc_officers: number[]
+  prc_officers: number[];
   relationship_is_represented: string;
   relationships_are_positive: string;
   review_date: string | null;
