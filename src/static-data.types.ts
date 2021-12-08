@@ -59,4 +59,4 @@ export type CountryProgram = {
   invalid: boolean;
   from_date: string;
   to_date: string;
-}
+};

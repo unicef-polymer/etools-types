@@ -1,5 +1,5 @@
-import {PartnerStaffMember} from '../partner.types';
-import {Permission} from '../global.types';
+import { PartnerStaffMember } from '../partner.types';
+import { Permission } from '../global.types';
 
 export class MinimalAgreement {
   id: number | null = null;

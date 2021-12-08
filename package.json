@@ -16,11 +16,20 @@
     "dist"
   ],
   "scripts": {
+    "lint": "eslint ./src --ext ts",
+    "prepublishOnly": "npm run lint",
     "build": "tsc --skipLibCheck",
     "prepare": "rm -rf ./dist && npm run build"
   },
   "devDependencies": {
-    "typescript": "^3.8.3"
+    "typescript": "^3.8.3",
+    "eslint": "^7.20.0",
+    "eslint-config-google": "^0.13.0",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-prettier": "^3.2.0",
+    "@typescript-eslint/eslint-plugin": "^3.10.1",
+    "@typescript-eslint/parser": "^3.10.1",
+    "prettier": "^2.3.2"
   },
   "bugs": {
     "url": "https://github.com/unicef-polymer/etools-types/issues"
