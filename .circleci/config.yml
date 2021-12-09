@@ -6,7 +6,7 @@ version: 2
 jobs:
   lint:
     docker:
-      - image: cimg/node:16.8.0
+      - image: cimg/node:12.22.7
 
     working_directory: ~/repo
 
@@ -28,7 +28,7 @@ jobs:
   publish:
     docker:
       # specify the version you desire here
-      - image: cimg/node:16.8.0
+      - image: cimg/node:12.22.7
 
     working_directory: ~/repo
 
