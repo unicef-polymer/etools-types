@@ -2,7 +2,7 @@ import {
   InterventionActivity,
   InterventionAmendment,
   InterventionQuarter,
-  ManagementBudget,
+  ManagementBudget
 } from '../intervention.types';
 import { ReviewAttachment } from '../attachments.types';
 import { Permission } from '../global.types';

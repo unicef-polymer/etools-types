@@ -1,5 +1,5 @@
 export type EtoolsUser = {
-  countries_available: AvailableUserCountry[],
+  countries_available: AvailableUserCountry[];
   country: UserCountry;
   supervisor: boolean | null;
   groups: UserGroup[];
@@ -29,7 +29,7 @@ export type EtoolsUser = {
   user: number;
   country_override: number;
   office: any;
-  oic: null
+  oic: null;
 };
 
 export type AvailableUserCountry = {
@@ -42,7 +42,7 @@ export type UserGroup = {
   id: string;
   name: string;
   permissions: number[];
-}
+};
 
 export type UserCountry = {
   id: number;
@@ -51,7 +51,7 @@ export type UserCountry = {
   longitude: string;
   initial_zoom: number;
   local_currency: string;
-}
+};
 
 export type Country = {
   country_short_code: string;
