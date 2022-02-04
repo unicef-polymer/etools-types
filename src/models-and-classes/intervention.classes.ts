@@ -284,7 +284,7 @@ export class Intervention {
   reviews: InterventionReview[] = [];
   original_intervention = '';
   activation_protocol = '';
-  sent_back_comment ='';
+  sent_back_comment = '';
 }
 
 export type RiskData = {
