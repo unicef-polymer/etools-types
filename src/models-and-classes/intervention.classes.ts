@@ -45,6 +45,7 @@ export class IndicatorIndicator {
 export class Indicator {
   // Indicator
   id: string | null = null;
+  code?: string;
   is_active = true;
   is_high_frequency = false;
   indicator: IndicatorIndicator | null = new IndicatorIndicator();
