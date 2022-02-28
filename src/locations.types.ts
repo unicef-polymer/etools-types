@@ -3,7 +3,8 @@ export type LocationObject = {
   name: string;
   p_code: string;
   parent: string;
-  gateway: AdminLevel;
+  admin_level_name: string;
+  admin_level: number;
 };
 
 export interface AdminLevel {
