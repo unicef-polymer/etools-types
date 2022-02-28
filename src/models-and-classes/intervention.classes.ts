@@ -45,6 +45,7 @@ export class IndicatorIndicator {
 export class Indicator {
   // Indicator
   id: string | null = null;
+  code?: string;
   is_active = true;
   is_high_frequency = false;
   indicator: IndicatorIndicator | null = new IndicatorIndicator();
@@ -284,6 +285,7 @@ export class Intervention {
   reviews: InterventionReview[] = [];
   original_intervention = '';
   activation_protocol = '';
+  sent_back_comment = '';
 }
 
 export type RiskData = {

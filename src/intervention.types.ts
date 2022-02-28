@@ -72,6 +72,7 @@ export type InterventionComment = {
 
 export type InterventionActivity = {
   id: number;
+  code: string;
   context_details: string;
   cso_cash: string;
   cso_supplies: string;
