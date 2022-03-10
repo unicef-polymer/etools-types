@@ -26,6 +26,7 @@ export interface ResultLinkLowerResult {
 
 export interface ExpectedResult {
   id: number;
+  code: string;
   cp_output: number;
   cp_output_name: string;
   intervention: number;
