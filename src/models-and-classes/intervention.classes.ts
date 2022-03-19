@@ -350,6 +350,7 @@ export type InterventionReview = {
   review_type: string;
   submitted_by: MinimalUser | null;
   supply_issues_considered: string;
+  sent_back_comment: string;
 };
 
 export type PrcOfficerReview = {
