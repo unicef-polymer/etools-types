@@ -1,6 +1,7 @@
 export type EtoolsUser = {
   countries_available: AvailableUserCountry[];
   country: UserCountry;
+  preferences: { language: string };
   supervisor: boolean | null;
   groups: UserGroup[];
   supervisees: any[];
@@ -75,6 +76,7 @@ export interface MinimalUser {
 export interface User extends MinimalUser {
   country: AvailableUserCountry;
   country_override: number;
+  preferences: { language: string };
   countries_available: AvailableUserCountry[];
   groups: UserGroup[];
   is_unicef_user: boolean;
