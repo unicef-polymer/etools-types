@@ -71,6 +71,7 @@ export class PlannedBudget {
   currency?: string;
   unicef_cash_local?: string;
   in_kind_amount_local?: string;
+  total_supply?: string;
   partner_contribution_local?: string;
   partner_contribution_percent?: number;
   programme_effectiveness?: string;
