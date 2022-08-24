@@ -83,6 +83,7 @@ export type InterventionActivity = {
   time_frames: number[];
   unicef_cash: string;
   unicef_suppies: number;
+  is_active: boolean;
 };
 
 export type InterventionActivityItem = {
