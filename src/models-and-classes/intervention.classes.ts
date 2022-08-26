@@ -60,6 +60,7 @@ export class Indicator {
   cluster_name: string | null = null;
   cluster_indicator_id: number | null = null;
   cluster_indicator_title: string | null = null;
+  created?: string;
   response_plan_name: string | null = null;
   numerator_label = '';
   denominator_label = '';
@@ -255,6 +256,7 @@ export class Intervention {
   result_links: ExpectedResult[] = [];
   planned_visits: PlannedVisit[] = [];
   in_amendment = false;
+  in_amendment_date = '';
   amendments: InterventionAmendment[] = [];
   quarters: InterventionQuarter[] = [];
   locations: [] = [];
