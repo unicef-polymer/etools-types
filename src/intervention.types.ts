@@ -84,6 +84,7 @@ export type InterventionActivity = {
   unicef_cash: string;
   unicef_suppies: number;
   is_active: boolean;
+  created: string;
 };
 
 export type InterventionActivityItem = {
