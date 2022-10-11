@@ -4,6 +4,8 @@ export type EtoolsUser = {
   preferences: { language: string };
   supervisor: boolean | null;
   groups: UserGroup[];
+  organization: UserOrganization;
+  organizations_available: UserOrganization[];
   supervisees: any[];
   name: string;
   last_login: string;
@@ -43,6 +45,11 @@ export type UserGroup = {
   id: string;
   name: string;
   permissions: number[];
+};
+
+export type UserOrganization = {
+  id: number;
+  name: string;
 };
 
 export type UserCountry = {
