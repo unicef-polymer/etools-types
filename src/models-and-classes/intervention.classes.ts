@@ -124,10 +124,14 @@ export interface Fr {
 export class PlannedVisit {
   id: number | null = null;
   year: string | null = null;
-  programmatic_q1 = '0';
-  programmatic_q2 = '0';
-  programmatic_q3 = '0';
-  programmatic_q4 = '0';
+  programmatic_q1 = 0;
+  programmatic_q2 = 0;
+  programmatic_q3 = 0;
+  programmatic_q4 = 0;
+  programmatic_q1_sites = [];
+  programmatic_q2_sites = [];
+  programmatic_q3_sites = [];
+  programmatic_q4_sites = [];
   programmatic: any;
   [key: string]: any;
 }
