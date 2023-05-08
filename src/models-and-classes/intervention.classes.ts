@@ -9,7 +9,7 @@ import { Permission } from '../global.types';
 import { LocationObject } from '../locations.types';
 import { Section } from '../static-data.types';
 import { MinimalUser } from '../user.types';
-import {Site} from '../sites.types';
+import { Site } from '../sites.types';
 
 export interface ResultLinkLowerResult {
   // ll_result
