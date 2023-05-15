@@ -4,6 +4,7 @@ export type PartnerStaffMember = {
   first_name: string;
   last_name: string;
   active: boolean;
+  has_active_realm: boolean;
   title: string;
   email: string;
   phone: string;
