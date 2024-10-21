@@ -82,6 +82,7 @@ export type InterventionActivity = {
   name: string;
   time_frames: number[];
   unicef_cash: string;
+  unfunded_cash: string;
   unicef_suppies: number;
   is_active: boolean;
   created: string;
@@ -95,6 +96,7 @@ export type InterventionActivityItem = {
   unit: string;
   no_units: number;
   unit_price: string;
+  unfunded_cash: string;
 };
 
 export type InterventionActivityTimeframe = InterventionQuarter & {
@@ -138,6 +140,7 @@ export type ManagementBudgetItem = {
   kind: string;
   unicef_cash: string;
   cso_cash: string;
+  unfunded_cash: string;
   unit: string;
   no_units: number;
   unit_price: string;
