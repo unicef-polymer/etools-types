@@ -1,7 +1,8 @@
 {
   "name": "@unicef-polymer/etools-types",
   "description": "Etools types",
-  "version": "1.11.19",
+  "version": "1.11.20",
+  "type": "module",
   "contributors": [
     "eTools Team"
   ],
@@ -16,20 +17,27 @@
     "dist"
   ],
   "scripts": {
-    "lint": "eslint ./src --ext ts",
+    "lint:eslint": "eslint src/**",
+    "format:eslint": "eslint src/** --fix",
+    "lint": "npm run lint:eslint",
+    "format": "npm run format:eslint",
     "prepublishOnly": "npm run lint",
     "build": "tsc --skipLibCheck",
     "prepare": "rm -rf ./dist && npm run build"
   },
   "devDependencies": {
-    "typescript": "^4.5.5",
-    "eslint": "^7.32.0",
-    "eslint-config-google": "^0.14.0",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-prettier": "^4.0.0",
-    "@typescript-eslint/eslint-plugin": "^5.10.2",
-    "@typescript-eslint/parser": "^5.10.2",
-    "prettier": "^2.5.1"
+    "typescript": "^4.9.5",
+    "eslint": "^9.16.0",
+    "@eslint/eslintrc": "^3.2.0",
+    "@eslint/js": "^9.16.0",
+    "@typescript-eslint/eslint-plugin": "^8.17.0",
+    "@typescript-eslint/parser": "^8.17.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-html": "^8.1.2",
+    "eslint-plugin-lit": "^1.15.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "globals": "^15.13.0",
+    "prettier": "^3.4.2"
   },
   "bugs": {
     "url": "https://github.com/unicef-polymer/etools-types/issues"
