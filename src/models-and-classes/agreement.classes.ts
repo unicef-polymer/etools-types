@@ -14,7 +14,7 @@ export class MinimalAgreement {
   partner_name = '';
   signed_by_partner_date = '';
   signed_by_unicef_date = '';
-  signed_by?: string | null = null;
+  signed_by?: any | null = null;
   special_conditions_pca = false;
   status = '';
 }
@@ -36,6 +36,7 @@ class AgreementPermissionFields {
   end = true;
   partner = true;
   partner_manager = true;
+  signed_by = true;
   signed_by_id = true;
   signed_by_partner_date = true;
   signed_by_unicef_date = true;
@@ -51,6 +52,7 @@ class AgreementPermissionFields {
     this.end = true;
     this.partner = true;
     this.partner_manager = true;
+    this.signed_by = true;
     this.signed_by_id = true;
     this.signed_by_partner_date = true;
     this.signed_by_unicef_date = true;
@@ -66,6 +68,7 @@ class AgreementPermissionFields {
     this.country_programme = true;
     this.end = false;
     this.partner = true;
+    this.signed_by = false;
     this.signed_by_id = false;
     this.partner_manager = false;
     this.signed_by_partner_date = false;
