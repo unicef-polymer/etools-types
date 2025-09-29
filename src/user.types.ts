@@ -51,6 +51,7 @@ export type UserGroup = {
 export type UserOrganization = {
   id: number;
   name: string;
+  vendor_number: string;
 };
 
 export type UserCountry = {
