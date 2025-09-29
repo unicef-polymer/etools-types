@@ -1,7 +1,7 @@
 {
   "name": "@unicef-polymer/etools-types",
   "description": "Etools types",
-  "version": "1.11.23",
+  "version": "1.11.24",
   "type": "module",
   "contributors": [
     "eTools Team"
