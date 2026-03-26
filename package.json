@@ -1,7 +1,7 @@
 {
   "name": "@unicef-polymer/etools-types",
   "description": "Etools types",
-  "version": "1.11.20",
+  "version": "2.0.0",
   "type": "module",
   "contributors": [
     "eTools Team"
@@ -22,11 +22,10 @@
     "lint": "npm run lint:eslint",
     "format": "npm run format:eslint",
     "prepublishOnly": "npm run lint",
-    "build": "tsc --skipLibCheck",
-    "prepare": "rm -rf ./dist && npm run build"
+    "tsToJs": "tsc --skipLibCheck"
   },
   "devDependencies": {
-    "typescript": "^4.9.5",
+    "typescript": "^5.3.3",
     "eslint": "^9.16.0",
     "@eslint/eslintrc": "^3.2.0",
     "@eslint/js": "^9.16.0",
