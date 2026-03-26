@@ -19,6 +19,7 @@ export type EtoolsUser = {
   is_active: string;
   show_ap: boolean;
   is_unicef_user: boolean;
+  show_gpd: boolean;
   guid: any;
   partner_staff_member: any;
   job_title: any;
@@ -50,6 +51,7 @@ export type UserGroup = {
 export type UserOrganization = {
   id: number;
   name: string;
+  vendor_number: string;
 };
 
 export type UserCountry = {
