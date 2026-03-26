@@ -5,6 +5,7 @@ export type LocationObject = {
   parent: string;
   admin_level_name: string;
   admin_level: number;
+  is_active?: boolean;
 };
 
 export interface AdminLevel {
