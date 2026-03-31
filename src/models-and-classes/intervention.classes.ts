@@ -363,6 +363,7 @@ export type InterventionReview = {
   submitted_by: MinimalUser | null;
   supply_issues_considered: string;
   sent_back_comment: string;
+  is_recommended_for_approval?: boolean;
 };
 
 export type PrcOfficerReview = {
