@@ -45,6 +45,8 @@ export class GDDPlannedBudget {
   total_cash_local?: number;
   total_hq_cash_local?: number;
   total_unicef_cash_local_wo_hq?: number;
+  total_supply?: number;
+  currency_decimal_places?: number;
 }
 
 export class GDDAttachment {
@@ -260,6 +262,8 @@ export class GDD {
   reviews: GDDReview[] = [];
   original_intervention = '';
   activation_protocol = '';
+  is_recommended_for_approval?: boolean;
+  original_gdd?: any;
 }
 
 export type GDDRiskData = {
@@ -315,6 +319,7 @@ export type GDDReview = {
   submitted_by: MinimalUser | null;
   supply_issues_considered: string;
   sent_back_comment?: string;
+  is_recommended_for_approval?: boolean;
 };
 
 export type GDDPrcOfficerReview = {

@@ -53,6 +53,7 @@ export type GDDAmendment = {
   internal_prc_review: number | string | null;
   amended_intervention: string | null;
   signed_by_unicef_date?: string | null;
+  amended_gdd?: number;
 };
 
 export type GDDComment = {
@@ -84,7 +85,7 @@ export type GDDActivity = {
   unicef_suppies: number;
   is_active: boolean;
   created: string;
-  ewp_activity: number;
+  ewp_activity: any;
   locations: number[];
 };
 
