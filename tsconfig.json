@@ -19,5 +19,6 @@
   "include": [
     "src/**/*.ts"
   ],
-  "exclude": []
+  "exclude": [],
+  "extends": "../../../tsconfig.json"
 }
