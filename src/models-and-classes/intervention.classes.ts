@@ -85,6 +85,7 @@ export class PlannedBudget {
   total_unicef_cash_local_wo_hq?: number;
   has_unfunded_cash?: boolean;
   unfunded_hq_cash?: number;
+  currency_decimal_places?: number;
 }
 
 export class InterventionAttachment {
